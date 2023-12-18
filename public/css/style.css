@@ -9,7 +9,8 @@
 /*}*/
 
 body{
-    background: #131313;
+    /*background: #131313;*/
+    background: #0a0a0a;
 }
 
 body, html {
@@ -18,11 +19,11 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-section{
-    position: relative;
-    overflow: hidden;
-    height: 500vh;
-}
+/*section{*/
+/*    position: relative;*/
+/*    overflow: hidden;*/
+/*    height: 500vh;*/
+/*}*/
 
 #landingPage #header h1{
     position: fixed;
@@ -64,4 +65,60 @@ section{
     left: 0;
     transform: translate(0%, -50%);
     z-index: 9;
+}
+
+.chambre:hover{
+    cursor: pointer;
+}
+
+#lettreChapitre1{
+    z-index: 90;
+    background: yellow;
+    height: 90%;
+    position: fixed;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 0.5s;
+}
+
+#lettreChapitre1 img{
+    height: 100%;
+}
+
+#lettreChapitre1 i{
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    transform: rotate(45deg);
+    font-size: 32px;
+    color: gray;
+}
+
+#lettreChapitre1 i:hover{
+    cursor: pointer;
+}
+
+#lettreChapitre1 button{
+    position: fixed;
+    z-index: 91;
+    left: 50%;
+    bottom: 16px;
+    transform: translate(-50%,-50%);
+    padding-inline: 32px;
+    padding-block: 4px;
+    background: transparent;
+    border: 2px solid red;
+    border-radius: 32px;
+    color: red;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transition: 0.2s ease-in-out;
+}
+
+#lettreChapitre1 button:hover{
+    cursor: pointer;
+    background: red;
+    color: black;
+    transition: 0.2s ease-in-out;
 }

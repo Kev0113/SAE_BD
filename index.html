@@ -20,16 +20,17 @@
     <title>Noé le crack</title>
 </head>
 <body>
-    <section id="landingPage">
+
+    <section id="landingPage" style="height: 500vh">
+        <div id="etoiles" style="height: 340px; width: 200%; position: fixed; z-index: 2; overflow: hidden">
+            <img src="./public/img/étoiles.png" alt="">
+        </div>
+
         <div id="header">
             <h1>NOTRE BD STYLÉ</h1>
         </div>
         <div id="banner">
-<!--            <div class="moving-div" style="height: 350px; width: 200%; overflow: hidden; z-index: 1;">-->
-<!--                <img style="width: 150%" src="/public/img/rectangle.png" alt="">-->
-<!--            </div>-->
-
-            <div class="lampadaire_1" style="position: fixed; top: 40%; z-index: 2; height: 325px; transform: translateY(-50%)">
+            <div class="lampadaire_1" style="position: fixed; top: 40%; z-index: 9; height: 325px; transform: translateY(-50%)">
                 <img src="./public/img/lampadaire_fini.png" alt="" style="width: 100%; height: 100%">
             </div>
 
@@ -37,14 +38,17 @@
                 <img src="./public/img/Personnage.png" alt="" style="width: 100%; height: 100%">
             </div>
 
-            <div id="car" style="position: fixed; top: 51%; z-index: 2; height: 250px; transform: translateY(-50%)">
+            <div id="car" style="position: fixed; top: 51%; z-index: 9; height: 250px; transform: translateY(-50%)">
                 <img src="./public/img/taxi_car.png" alt="" style="width: 100%; height: 100%">
             </div>
 
-            <div class="moving-div" style="position: fixed; top: 37%; width: 175%; height: 240px ; z-index: 1;transform: translateY(-50%)">
+            <div class="moving-div" style="position: fixed; top: 37%; width: 215%; height: 260px ; z-index: 8;transform: translateY(-50%)">
                 <img src="./public/img/decor.png" alt="" style="width: 100%; height: 100%">
             </div>
 
+            <div class="chambre" style="background: red;position: fixed; top: 40%; z-index: 9; height: 325px; width: 120px;transform: translateY(-50%)">
+<!--                <img src="./public/img/lampadaire_fini.png" alt="" style="width: 100%; height: 100%">-->
+            </div>
         </div>
         <div id="footerLandingPage">
             <div>
@@ -56,14 +60,21 @@
         </div>
     </section>
 
-    <section id="test" style="height: 150vh;">
+
+    <section id="lettreChapitre1">
+        <i id="closeInvitation" class='bx bx-plus'></i>
+        <img src="./public/img/invitation_hotel.png" alt="">
+        <button id="acceptInvitation">Accepter</button>
+    </section>
+
+    <section id="test" style="height: 500vh">
+            <h1>Chapitre 1</h1>
+            <div style="position: fixed; top: 50%; left: 50%; z-index: 10; height: 370px; transform: translate(-50%,-50%)">
+                <img src="./public/img/Personnage.png" alt="" style="width: 100%; height: 100%">
+            </div>
 
     </section>
 
-    <script>
-
-
-    </script>
 
 
 </body>
