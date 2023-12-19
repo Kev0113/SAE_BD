@@ -26,6 +26,22 @@ body, html {
 /*    height: 500vh;*/
 /*}*/
 
+#volumeParam{
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 99;
+}
+
+#volumeParam i{
+    font-size: 64px;
+}
+
+#volumeParam i:hover{
+    cursor: pointer;
+}
+
+
 
 #flashDiv {
     position: fixed;

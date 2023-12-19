@@ -1,8 +1,34 @@
+volumeParam.addEventListener("click", () => {
+    if (volumeState === true){
+        volumeParamOff.style.display = "block"
+        volumeParamOn.style.display = "none"
+        volumeState = false
+        volumeParamsMusic(false)
+    }else if(volumeState === false){
+        volumeParamOff.style.display = "none"
+        volumeParamOn.style.display = "block"
+        volumeState = true
+        volumeParamsMusic(true)
+    }
+})
+
+function volumeParamsMusic(state){
+    if (state === true){
+        sound_start.volume = 0.03
+        sound_car.volume = 1
+        sound_flash.volume = 1
+    }else{
+        sound_start.volume = 0
+        sound_car.volume = 0
+        sound_flash.volume = 0
+    }
+}
+
 btnStart.addEventListener('click', () => {
     sectionStart.style.display = 'none'
     window.scrollTo(0, 0);
     sound_start.play()
-    sound_start.volume = 0.03
+    volumeParamsMusic(volumeState)
 })
 window.addEventListener('scroll', function(event) {
     // console.log(scrollY)
@@ -40,6 +66,7 @@ function flashOnOff(){
     let flashDiv = document.querySelector('#flashDiv');
     flashDiv.style.opacity = 1;
     sound_flash.play()
+    volumeParamsMusic(volumeState)
 
     setTimeout(function() {
         flashDiv.style.opacity = 0;
@@ -52,6 +79,7 @@ function setCarCharacter(){
     personnage.style.top = "54%"
     personnage.style.height = "280px"
     sound_car.play()
+    volumeParamsMusic(volumeState)
 }
 
 function setPersonnCharacter(){

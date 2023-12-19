@@ -37,4 +37,8 @@ let paraScroll = document.querySelector('#sectionAscen .scrollPara')
 let etage = document.querySelectorAll('#sectionAscen .etage')
 let lastEtage = document.querySelector('.lastEtage')
 let chap1Valid = false
+let volumeState = true
+let volumeParam = document.querySelector('#volumeParam')
+let volumeParamOn = document.querySelector('.bxs-volume-full')
+let volumeParamOff = document.querySelector('.bxs-volume-mute')
 
