@@ -133,7 +133,24 @@ body, html {
     cursor: pointer;
 }
 
-#lettreChapitre1 button, #nextChapiter1 button{
+#porteHotel button, #sectionAscen button{
+    position: fixed;
+    z-index: 91;
+    left: 50%;
+    bottom: 16px;
+    transform: translate(-50%,-50%);
+    padding-inline: 32px;
+    padding-block: 4px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 32px;
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transition: 0.2s ease-in-out;
+}
+
+#lettreChapitre1 button, #nextChapiter1 button, #sectionHotel button, #polaRecep1 button, #polaRecep2 button, #polaRecep3 button{
     position: fixed;
     z-index: 91;
     left: 50%;
@@ -150,7 +167,14 @@ body, html {
     transition: 0.2s ease-in-out;
 }
 
-#lettreChapitre1 button:hover, #nextChapiter1 button:hover{
+#porteHotel button:hover, #sectionAscen button:hover{
+    cursor: pointer;
+    background: white;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+
+#lettreChapitre1 button:hover, #nextChapiter1 button:hover, #sectionHotel button:hover, #polaRecep1 button:hover, #polaRecep2 button:hover, #polaRecep3 button:hover{
     cursor: pointer;
     background: black;
     color: white;
@@ -158,11 +182,114 @@ body, html {
 }
 
 
-#nextChapiter1{
+#nextChapiter1, #sectionHotel, #polaRecep1, #polaRecep2, #polaRecep3{
     z-index: 90;
     position: fixed;
     bottom: -100%;
     left: 50%;
     transform: translateX(-50%);
     transition: bottom 0.5s;
+}
+
+#porteHotel, #porteAscenceur{
+    /*background: red;*/
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    z-index: 50;
+    transition: 0.2s ease-in-out;
+}
+
+#porteHotel img, #sectionAscen img{
+    height: 85%;
+    position: fixed;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#porteHotel .porteDroite{
+    /*background: url("./public/img/porte_hotel/porte_de_droite");*/
+    background: url("../img/porte_hotel/porte_de_droite.png");
+    /*background: red;*/
+    position: fixed;
+    z-index: 2;
+    width: 7.5%;
+    height: 63.5%;
+    left: 50%;
+    bottom: 13%;
+}
+
+#porteHotel .porteGauche{
+    background: url("../img/porte_hotel/porte_de_gauche.png");
+    /*background: red;*/
+    position: fixed;
+    z-index: 2;
+    width: 7.5%;
+    height: 63.5%;
+    left: 43%;
+    bottom: 13%;
+}
+
+#porteHotel .decorReception{
+    background: url("../img/porte_hotel/couloir.png");
+    height: 700px;
+    width: 400px;
+    position: fixed;
+    bottom: 13%;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-size: cover;
+}
+
+#sectionAscen .porteAscDroite{
+    left: 50%;
+    top: 20%;
+    height: 70%;
+    width: 163px;
+    position: fixed;
+    background: url("../img/porte_ascenseur/porte_droite.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#sectionAscen .porteAscGauche{
+    left: 41.9%;
+    top: 24%;
+    height: 65%;
+    width: 157px;
+    position: fixed;
+    background: url("../img/porte_ascenseur/porte_gauche.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#sectionAscen #interieurAsc{
+    background: url("../img/porte_ascenseur/interieur_asc.png");
+    position: fixed;
+    height: 65%;
+    width: 340px;
+    left: 50%;
+    top: 54.9%;
+    z-index: 1;
+    transform: translate(-50%,-50%);
+    background-size: cover;
+    background-position: center;
+}
+
+
+#sectionAscen .scrollPara{
+    position: fixed;
+    left: 50%;
+    bottom: 5.5%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+#sectionAscen .etage{
+    display: none;
 }

@@ -20,20 +20,19 @@
     <title>Noé le crack</title>
 </head>
 <body>
-
     <div id="flashDiv"></div>
 
     <section id="startPage">
         <h1 id="title">Clique !</h1>
     </section>
 
-    <section id="landingPage" style="height: 1500vh">
+    <section id="landingPage" style="height: 1500vh;">
         <div id="etoiles" style="height: 340px; width: 200%; position: fixed; z-index: 2; overflow: hidden">
             <img src="./public/img/étoiles.png" alt="">
         </div>
 
         <div id="header">
-            <h1>NOTRE BD STYLÉ</h1>
+            <h1>NOTRE BD STYLÉE</h1>
         </div>
         <div id="banner">
             <div class="lampadaire_1" style="position: fixed; top: 40%; z-index: 9; height: 325px; transform: translateY(-50%)">
@@ -44,11 +43,22 @@
                 <img id="personnageSrc" src="./public/img/Personnage.png" alt="" style="width: 100%; height: 100%">
             </div>
 
+            <div id="tricolore" style="position: fixed; top: 51%; left: 50%; z-index: 10; height: 450px; transform: translate(-50%,-50%)">
+                <img src="./public/img/tricolore.png" alt="" style="width: 100%; height: 100%">
+            </div>
+
+            <div id="bush" style="position: fixed; top: 50%; left: 50%; z-index: 9; height: 150px; transform: translate(-50%,-50%)">
+                <img src="./public/img/bush.png" alt="" style="width: 100%; height: 100%">
+            </div>
+
             <div id="car" style="position: fixed; top: 51%; z-index: 9; height: 250px; transform: translateY(-50%)">
                 <img src="./public/img/taxi_car.png" alt="" style="width: 100%; height: 100%">
             </div>
 
-            <div class="moving-div" style="position: fixed; top: 37%; width: 215%; height: 260px ; z-index: 8;transform: translateY(-50%); display: flex; gap: 0">
+            <div class="moving-div" style="position: fixed; top: 37%; width: 500%; height: 260px ; z-index: 8;transform: translateY(-50%); display: flex; gap: 0">
+                <img src="./public/img/decor.png" alt="" style="width: 100%; height: 100%">
+                <img src="./public/img/decor.png" alt="" style="width: 100%; height: 100%">
+                <img src="./public/img/decor.png" alt="" style="width: 100%; height: 100%">
                 <img src="./public/img/decor.png" alt="" style="width: 100%; height: 100%">
                 <img src="./public/img/decor.png" alt="" style="width: 100%; height: 100%">
                 <img src="./public/img/decor.png" alt="" style="width: 100%; height: 100%">
@@ -57,6 +67,12 @@
             <div class="chapiter1" style="position: fixed; top: 40%; z-index: 8; height: 400px; width: 250px;transform: translateY(-50%)">
                 <img src="./public/img/hotel_png.png" alt="" style="height: 100%">
                 <h1 style="text-align: center;">Chapitre 1</h1>
+                <p style="text-align: center">Clique !</p>
+            </div>
+
+            <div id="hotel" style="position: fixed; top: 40%; z-index: 8; height: 400px; width: 250px;transform: translateY(-50%)">
+                <img src="./public/img/hollywood_tower.png" alt="" style="height: 100%">
+                <h1 style="text-align: center;">Hôtel</h1>
                 <p style="text-align: center">Clique !</p>
             </div>
         </div>
@@ -70,7 +86,6 @@
         </div>
     </section>
 
-
     <section id="lettreChapitre1">
         <i id="closeInvitation" class='bx bx-plus'></i>
         <img src="./public/img/invitation_hotel.png" alt="">
@@ -79,20 +94,86 @@
 
 
     <section id="nextChapiter1">
-        <img src="./public/img/pola_hotel.png" alt="">
+        <img src="./public/img/pola_voiture.png" alt="">
         <button id="nextInvitation">Next</button>
     </section>
 
-<!--    <section id="test" style="height: 500vh; display: none">-->
 
-<!--            <div style="text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: white">-->
-<!--                <h1 style="font-size: 32px">Chapitre 1</h1>-->
-<!--                <p style="font-size: 24px" data-scroll data-scroll-speed="0.2">Le titre ici !</p>-->
-<!--            </div>-->
+    <section id="sectionHotel">
+        <img src="./public/img/pola_hotel.png" alt="">
+        <button id="enterHotel">Next</button>
+    </section>
 
-<!--    </section>-->
+    <section id="porteHotel" style="height: 100%">
+        <img src="./public/img/porte_hotel/ouverture2porte.png" alt="">
+        <div class="porteGauche"></div>
+        <div class="porteDroite"></div>
+        <button id="openHotelDoor" style="position: fixed; bottom: 5%; left: 45%; transform: translateX(-50%)">Open</button>
+        <button id="enterHotelDoor" style="position: fixed; bottom: 5%; left: 55%; transform: translateX(-50%); display: none">Enter</button>
+        <div class="decorReception"></div>
+    </section>
+
+    <section id="polaRecep1">
+        <img src="./public/img/pola_accueil.png" alt="">
+        <button id="nextPolaRecept1">Next</button>
+    </section>
+
+    <section id="polaRecep2">
+        <img src="./public/img/pola_accueil2.png" alt="">
+        <button id="nextPolaRecept2">Next</button>
+    </section>
+
+    <section id="polaRecep3">
+        <img src="./public/img/pola_accueil3.png" alt="">
+        <button id="nextPolaRecept3">Next</button>
+    </section>
+
+    <section id="sectionAscen" style="height: 100vh; display: none; overflow: hidden">
+        <img src="./public/img/porte_ascenseur/ascenseur_nodoors.png" alt="">
+        <div class="porteAscDroite" style="z-index: 2;"></div>
+        <div class="porteAscGauche" style="z-index: 2;"></div>
+        <div id="interieurAsc"></div>
+        <button id="openDoorAsc" style="position: fixed; bottom: 5%; left: 45%; transform: translateX(-50%);">Open</button>
+        <button id="enterDoorAsc" style="position: fixed; bottom: 5%; left: 55%; transform: translateX(-50%);display: none;">Enter</button>
+        <button id="endDoorAsc" style="position: fixed; bottom: 5%; left: 50%; transform: translateX(-50%);display: none;">Sortir</button>
+        <div style="background: #0a0a0a; height: 100%; width: 40px; position: fixed; left: 37%; z-index: 3"></div>
+        <div style="background: #0a0a0a; height: 100%; width: 40px; position: fixed; left: 61%; z-index: 3"></div>
+        <p class="scrollPara">Scroll vers le haut pour continuer !</p>
 
 
+        <div class="etage" style="position: absolute; margin-top: 50vh; display: none; align-items: center; left: 50%; transform: translateX(-50%);font-size: 52px; gap: 66px">
+            <div class="line" style="background: white; height: 15px; width: 1420px"></div>
+            <p>6</p>
+        </div>
+        <div class="etage" style="position: absolute; margin-top: 150vh; display: none; align-items: center; left: 50%; transform: translateX(-50%);font-size: 52px; gap: 66px">
+            <div class="line" style="background: white; height: 15px; width: 1420px"></div>
+            <p>5</p>
+        </div>
+        <div class="etage" style="position: absolute; margin-top: 250vh; display: none; align-items: center; left: 50%; transform: translateX(-50%);font-size: 52px; gap: 66px">
+            <div class="line" style="background: white; height: 15px; width: 1420px"></div>
+            <p>4</p>
+        </div>
+        <div class="etage" style="position: absolute; margin-top: 350vh; display: none; align-items: center; left: 50%; transform: translateX(-50%);font-size: 52px; gap: 66px">
+            <div class="line" style="background: white; height: 15px; width: 1420px"></div>
+            <p>3</p>
+        </div>
+        <div class="etage" style="position: absolute; margin-top: 450vh; display: none; align-items: center; left: 50%; transform: translateX(-50%);font-size: 52px; gap: 66px">
+            <div class="line" style="background: white; height: 15px; width: 1420px"></div>
+            <p>2</p>
+        </div>
+        <div class="etage" style="position: absolute; margin-top: 550vh; display: none; align-items: center; left: 50%; transform: translateX(-50%);font-size: 52px; gap: 66px">
+            <div class="line" style="background: white; height: 15px; width: 1420px"></div>
+            <p>1</p>
+        </div>
+        <div class="etage" style="position: absolute; margin-top: 650vh; display: none; align-items: center; left: 50%; transform: translateX(-50%);font-size: 52px; gap: 66px">
+            <div class="line" style="background: white; height: 15px; width: 1420px"></div>
+            <p>0</p>
+        </div>
+        <div class="lastEtage" style="position: absolute; margin-top: 750vh; display: none; align-items: center; left: 50%; transform: translateX(-50%);font-size: 52px; gap: 66px">
+            <div class="line" style="background: white; height: 15px; width: 1420px"></div>
+            <p>-1</p>
+        </div>
+    </section>
 
 </body>
 </html>

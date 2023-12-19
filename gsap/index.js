@@ -8,7 +8,7 @@ gsap.to(".moving-div", {
         start: "top top",
         end: "bottom bottom",
         scrub: 0.5,
-        markers: true
+        markers: false
     }
 });
 
@@ -20,17 +20,17 @@ gsap.fromTo('.lampadaire_1',
             start: "top top",
             end: "bottom bottom",
             scrub: 0.5,
-            markers: true
+            markers: false
         }
     },
     {
-        left: -100,
+        left: -300,
         scrollTrigger: {
             trigger: document.body,
             start: "top top",
             end: "bottom bottom",
             scrub: 0.5,
-            markers: true
+            markers: false
         }
     }
 )
@@ -44,7 +44,7 @@ gsap.fromTo('#car',
             start: "top top",
             end: "bottom bottom",
             scrub: 0.5,
-            markers: true
+            markers: false
         }
     },
     {
@@ -54,7 +54,7 @@ gsap.fromTo('#car',
             start: "top top",
             end: "bottom bottom",
             scrub: 0.5,
-            markers: true
+            markers: false
         }
     }
 )
@@ -67,7 +67,7 @@ gsap.fromTo('#etoiles',
             start: "top top",
             end: "bottom bottom",
             scrub: 0.5,
-            markers: true
+            markers: false
         }
     },
     {
@@ -77,7 +77,7 @@ gsap.fromTo('#etoiles',
             start: "top top",
             end: "bottom bottom",
             scrub: 0.5,
-            markers: true
+            markers: false
         }
     }
 )
@@ -90,7 +90,7 @@ gsap.fromTo('.chapiter1',
             start: "top top",
             end: "bottom bottom",
             scrub: 0.5,
-            markers: true
+            markers: false
         }
     },
     {
@@ -100,7 +100,78 @@ gsap.fromTo('.chapiter1',
             start: "top top",
             end: "bottom bottom",
             scrub: 0.5,
-            markers: true
+            markers: false
+        }
+    }
+)
+
+gsap.fromTo('#tricolore',
+    {
+        x: 8000,
+        scrollTrigger: {
+            trigger: document.body,
+            start: "top top",
+            end: "bottom bottom",
+            scrub: 0.5,
+            markers: false
+        }
+    },
+    {
+        x: -500,
+        scrollTrigger: {
+            trigger: document.body,
+            start: "top top",
+            end: "bottom bottom",
+            scrub: 0.5,
+            markers: false
+        }
+    }
+)
+
+
+gsap.fromTo('#bush',
+    {
+        x: 12000,
+        scrollTrigger: {
+            trigger: document.body,
+            start: "top top",
+            end: "bottom bottom",
+            scrub: 0.5,
+            markers: false
+        }
+    },
+    {
+        x: -300,
+        scrollTrigger: {
+            trigger: document.body,
+            start: "top top",
+            end: "bottom bottom",
+            scrub: 0.5,
+            markers: false
+        }
+    }
+)
+
+
+gsap.fromTo('#hotel',
+    {
+        x: 24000,
+        scrollTrigger: {
+            trigger: document.body,
+            start: "top top",
+            end: "bottom bottom",
+            scrub: 0.5,
+            markers: false
+        }
+    },
+    {
+        x: 1300,
+        scrollTrigger: {
+            trigger: document.body,
+            start: "top top",
+            end: "bottom bottom",
+            scrub: 0.5,
+            markers: false
         }
     }
 )
