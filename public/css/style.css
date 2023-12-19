@@ -2,6 +2,7 @@
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 /*::-webkit-scrollbar{*/
@@ -24,6 +25,39 @@ body, html {
 /*    overflow: hidden;*/
 /*    height: 500vh;*/
 /*}*/
+
+
+#flashDiv {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+#startPage{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #0a0a0a;
+    z-index: 99;
+}
+
+#startPage h1{
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 64px;
+}
+
+#startPage h1:hover{
+    cursor: pointer;
+}
 
 #landingPage #header h1{
     position: fixed;
@@ -67,7 +101,7 @@ body, html {
     z-index: 9;
 }
 
-.chambre:hover{
+.chapiter1:hover{
     cursor: pointer;
 }
 
@@ -99,7 +133,7 @@ body, html {
     cursor: pointer;
 }
 
-#lettreChapitre1 button{
+#lettreChapitre1 button, #nextChapiter1 button{
     position: fixed;
     z-index: 91;
     left: 50%;
@@ -108,17 +142,27 @@ body, html {
     padding-inline: 32px;
     padding-block: 4px;
     background: transparent;
-    border: 2px solid red;
+    border: 2px solid black;
     border-radius: 32px;
-    color: red;
+    color: black;
     font-weight: bolder;
     text-transform: uppercase;
     transition: 0.2s ease-in-out;
 }
 
-#lettreChapitre1 button:hover{
+#lettreChapitre1 button:hover, #nextChapiter1 button:hover{
     cursor: pointer;
-    background: red;
-    color: black;
+    background: black;
+    color: white;
     transition: 0.2s ease-in-out;
+}
+
+
+#nextChapiter1{
+    z-index: 90;
+    position: fixed;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 0.5s;
 }

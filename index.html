@@ -21,7 +21,13 @@
 </head>
 <body>
 
-    <section id="landingPage" style="height: 500vh">
+    <div id="flashDiv"></div>
+
+    <section id="startPage">
+        <h1 id="title">Clique !</h1>
+    </section>
+
+    <section id="landingPage" style="height: 1500vh">
         <div id="etoiles" style="height: 340px; width: 200%; position: fixed; z-index: 2; overflow: hidden">
             <img src="./public/img/étoiles.png" alt="">
         </div>
@@ -34,26 +40,30 @@
                 <img src="./public/img/lampadaire_fini.png" alt="" style="width: 100%; height: 100%">
             </div>
 
-            <div style="position: fixed; top: 50%; left: 50%; z-index: 10; height: 370px; transform: translate(-50%,-50%)">
-                <img src="./public/img/Personnage.png" alt="" style="width: 100%; height: 100%">
+            <div id="personnage" style="position: fixed; top: 50%; left: 50%; z-index: 10; height: 370px; transform: translate(-50%,-50%)">
+                <img id="personnageSrc" src="./public/img/Personnage.png" alt="" style="width: 100%; height: 100%">
             </div>
 
             <div id="car" style="position: fixed; top: 51%; z-index: 9; height: 250px; transform: translateY(-50%)">
                 <img src="./public/img/taxi_car.png" alt="" style="width: 100%; height: 100%">
             </div>
 
-            <div class="moving-div" style="position: fixed; top: 37%; width: 215%; height: 260px ; z-index: 8;transform: translateY(-50%)">
+            <div class="moving-div" style="position: fixed; top: 37%; width: 215%; height: 260px ; z-index: 8;transform: translateY(-50%); display: flex; gap: 0">
+                <img src="./public/img/decor.png" alt="" style="width: 100%; height: 100%">
+                <img src="./public/img/decor.png" alt="" style="width: 100%; height: 100%">
                 <img src="./public/img/decor.png" alt="" style="width: 100%; height: 100%">
             </div>
 
-            <div class="chambre" style="background: red;position: fixed; top: 40%; z-index: 9; height: 325px; width: 120px;transform: translateY(-50%)">
-<!--                <img src="./public/img/lampadaire_fini.png" alt="" style="width: 100%; height: 100%">-->
+            <div class="chapiter1" style="position: fixed; top: 40%; z-index: 8; height: 400px; width: 250px;transform: translateY(-50%)">
+                <img src="./public/img/hotel_png.png" alt="" style="height: 100%">
+                <h1 style="text-align: center;">Chapitre 1</h1>
+                <p style="text-align: center">Clique !</p>
             </div>
         </div>
         <div id="footerLandingPage">
             <div>
-                <p>Chapitre 1</p>
-                <h1>Titre ici !</h1>
+                <p class="numberChapiter">Chapitre 1</p>
+                <h1 class="titleChapiter">Titre ici !</h1>
                 <i class='bx bx-arrow-back'></i>
                 <p>scroll pour découvrir la suite !</p>
             </div>
@@ -67,13 +77,20 @@
         <button id="acceptInvitation">Accepter</button>
     </section>
 
-    <section id="test" style="height: 500vh">
-            <h1>Chapitre 1</h1>
-            <div style="position: fixed; top: 50%; left: 50%; z-index: 10; height: 370px; transform: translate(-50%,-50%)">
-                <img src="./public/img/Personnage.png" alt="" style="width: 100%; height: 100%">
-            </div>
 
+    <section id="nextChapiter1">
+        <img src="./public/img/pola_hotel.png" alt="">
+        <button id="nextInvitation">Next</button>
     </section>
+
+<!--    <section id="test" style="height: 500vh; display: none">-->
+
+<!--            <div style="text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); color: white">-->
+<!--                <h1 style="font-size: 32px">Chapitre 1</h1>-->
+<!--                <p style="font-size: 24px" data-scroll data-scroll-speed="0.2">Le titre ici !</p>-->
+<!--            </div>-->
+
+<!--    </section>-->
 
 
 

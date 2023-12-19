@@ -1,35 +1,20 @@
-let isScroll = false;
-let scrollTimeout;
-let sound = new Audio('./public/sound/sound_car.mp3')
-// let sound_klaxon = new Audio('./public/sound/klaxon.mp3');
+/********START********/
+let chapiter1 = document.querySelector('.chapiter1')
+let sectionStart = document.querySelector('#startPage')
 
-document.addEventListener('DOMContentLoaded', () => {
-    sound.play()
-    sound.volume = 0
+let btnStart = document.querySelector('#title')
+btnStart.addEventListener('click', () => {
+    sectionStart.style.display = 'none'
+    window.scrollTo(0, 0);
 })
 
-function handleScroll() {
-    isScroll = true;
-
-    // Jouer le son lorsque l'utilisateur commence à défiler
-    sound.play();
-
-    clearTimeout(scrollTimeout);
-
-    scrollTimeout = setTimeout(() => {
-        isScroll = false;
-
-        // Arrêter le son lorsque l'utilisateur arrête de défiler
-        sound.pause();
-        sound.currentTime = 0; // Réinitialiser le son au début
-    }, 10000);
-}
-
-window.addEventListener('scroll', handleScroll);
-
-
-let chapiter1 = document.querySelector('.chambre')
+/***************/
+/********CHAPITER 1********/
 let closeInvitation = document.querySelector('#closeInvitation')
+let personnage = document.querySelector('#personnage')
+let titleChapiter = document.querySelector('.titleChapiter')
+let numberChapiter = document.querySelector('.numberChapiter')
+
 chapiter1.addEventListener("click", function() {
     var carre = document.querySelector("#lettreChapitre1");
     if (carre.style.display === "none") {
@@ -43,31 +28,68 @@ closeInvitation.addEventListener('click', () => {
     var carre = document.querySelector("#lettreChapitre1");
     carre.style.bottom = "-100%";
 })
+/***************/
+/********CHAPITER 2********/
 
 let acceptInvitation = document.querySelector('#acceptInvitation')
-let sectionLandingPage = document.querySelector('#landingPage')
-let sectionTest = document.querySelector('#test')
+
 var carre = document.querySelector("#lettreChapitre1");
+let nextChapiter1 = document.querySelector('#nextChapiter1')
+let nextInvitation = document.querySelector('#nextInvitation')
+
+let sound_car = new Audio('./public/sound/sound_car01.mp3')
+let sound_flash = new Audio('./public/sound/sound_flash01.mp3')
+
 acceptInvitation.addEventListener('click', () => {
-    sectionLandingPage.style.display = "none"
-    sectionTest.style.display = "block"
+    flashOnOff()
+    nextChapiter1.style.bottom = "15%"
     carre.style.bottom = "-100%";
-    window.scrollTo(0, 0);
 })
 
 
+function flashOnOff(){
+    let flashDiv = document.querySelector('#flashDiv');
+    flashDiv.style.opacity = 1;
+    sound_flash.play()
 
+    setTimeout(function() {
+        flashDiv.style.opacity = 0;
+    }, 250);
+}
 
+function setCarCharacter(){
+    let personnageSrc = document.querySelector('#personnageSrc')
+    personnageSrc.src = './public/img/car_chapiter2.png'
+    personnage.style.top = "54%"
+    personnage.style.height = "280px"
+    sound_car.play()
+}
 
+function setPersonnCharacter(){
+    let personnageSrc = document.querySelector('#personnageSrc')
+    personnageSrc.src = './public/img/Personnage.png'
+    personnage.style.top = "50%"
+    personnage.style.height = "370px"
+}
 
+nextInvitation.addEventListener('click', () => {
+    setCarCharacter()
+    nextChapiter1.style.bottom = "-100%"
+})
 
+/***************/
 
-
-
-
-
-
-
+window.addEventListener('scroll', () => {
+    if(personnage.getBoundingClientRect().left > chapiter1.getBoundingClientRect().left){
+        titleChapiter.innerHTML = "Titre 2"
+        numberChapiter.innerHTML = "Chapitre 2"
+        setCarCharacter()
+    }else{
+        titleChapiter.innerHTML = "Titre"
+        numberChapiter.innerHTML = "Chapitre 1"
+        // setPersonnCharacter()
+    }
+})
 
 
 

@@ -24,7 +24,7 @@ gsap.fromTo('.lampadaire_1',
         }
     },
     {
-        left: 1400,
+        left: -100,
         scrollTrigger: {
             trigger: document.body,
             start: "top top",
@@ -82,9 +82,9 @@ gsap.fromTo('#etoiles',
     }
 )
 
-gsap.fromTo('.chambre',
+gsap.fromTo('.chapiter1',
     {
-        x: 30000,
+        x: 8000,
         scrollTrigger: {
             trigger: document.body,
             start: "top top",
@@ -94,7 +94,7 @@ gsap.fromTo('.chambre',
         }
     },
     {
-        x: 1700,
+        x: -350,
         scrollTrigger: {
             trigger: document.body,
             start: "top top",
@@ -105,7 +105,7 @@ gsap.fromTo('.chambre',
     }
 )
 
-
+//EFFET P
 document.addEventListener("mousemove", (e) => {
     const { clientX, clientY } = e;
     const centerX = window.innerWidth / 2;
@@ -117,5 +117,19 @@ document.addEventListener("mousemove", (e) => {
         duration: 0.5,
         rotateY: posX * 20,
         rotateX: -posY * 20
+    });
+});
+
+document.addEventListener("mousemove", (e) => {
+    const { clientX, clientY } = e;
+    const centerX = window.innerWidth / 2;
+    const centerY = window.innerHeight / 2;
+    const posX = (clientX - centerX) / centerX;
+    const posY = (clientY - centerY) / centerY;
+
+    gsap.to("#startPage #title", {
+        duration: 0.5,
+        rotateY: posX * 30,
+        rotateX: -posY * 30
     });
 });
