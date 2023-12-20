@@ -13,6 +13,7 @@
     <script src="./public/js/sectionBanner.js" defer></script>
     <script src="./public/js/sectionHotel.js" defer></script>
     <script src="./public/js/sectionAscenseur.js" defer></script>
+    <script src="./public/js/sectionBd.js" defer></script>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
@@ -21,8 +22,13 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <title>Noé le crack</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <title>THE HOLLYWOOD TOWER</title>
 </head>
 <body>
 
@@ -34,7 +40,10 @@
     <div id="flashDiv"></div>
 
     <section id="startPage">
-        <h1 id="title">Clique !</h1>
+        <button id="title">
+            Start
+        </button>
+<!--        <h1 id="title" >Clique !</h1>-->
     </section>
 
     <section id="landingPage" style="height: 1500vh;">
@@ -43,7 +52,7 @@
         </div>
 
         <div id="header">
-            <h1>NOTRE BD STYLÉE</h1>
+            <h1>THE HOLLYWOOD TOWER</h1>
         </div>
         <div id="banner">
             <div class="lampadaire_1" style="position: fixed; top: 40%; z-index: 9; height: 325px; transform: translateY(-50%)">
@@ -77,22 +86,20 @@
 
             <div class="chapiter1" style="position: fixed; top: 40%; z-index: 8; height: 400px; width: 250px;transform: translateY(-50%)">
                 <img src="./public/img/hotel_png.png" alt="" style="height: 100%">
-                <h1 style="text-align: center;">Chapitre 1</h1>
-                <p style="text-align: center">Clique !</p>
+                <h1 style="text-align: center;">Maison</h1>
             </div>
 
-            <div id="hotel" style="position: fixed; top: 40%; z-index: 8; height: 400px; width: 250px;transform: translateY(-50%)">
+            <div id="hotel" style="position: fixed; top: 40%; z-index: 8; height: 400px; transform: translateY(-50%)">
                 <img src="./public/img/hollywood_tower.png" alt="" style="height: 100%">
-                <h1 style="text-align: center;">Hôtel</h1>
-                <p style="text-align: center">Clique !</p>
+                <h1 style="text-align: center; margin-top: 25px">Hôtel</h1>
             </div>
         </div>
         <div id="footerLandingPage">
             <div>
-                <p class="numberChapiter">Chapitre 1</p>
-                <h1 class="titleChapiter">Titre ici !</h1>
-                <i class='bx bx-arrow-back'></i>
-                <p>scroll pour découvrir la suite !</p>
+                <p class="numberChapiter">Direction</p>
+                <h1 class="titleChapiter">Maison</h1>
+                <i style="font-size: 52px" class='bx bx-arrow-back'></i>
+                <p style="font-family: 'Caveat', sans-serif; font-size: 50px;">scroll pour découvrir la suite !</p>
             </div>
         </div>
     </section>
@@ -106,37 +113,42 @@
 
     <section id="nextChapiter1">
         <img src="./public/img/pola_voiture.png" alt="">
-        <button id="nextInvitation">Next</button>
+        <p style="position: fixed; bottom: 13%; color:black; left: 50%; transform: translateX(-50%); font-family: 'Caveat',serif; font-size: 54px;">Votre voiture !</p>
+        <button id="nextInvitation">Suivant</button>
     </section>
 
 
     <section id="sectionHotel">
         <img src="./public/img/pola_hotel.png" alt="">
-        <button id="enterHotel">Next</button>
+        <p style="position: fixed; bottom: 13%; color:black; left: 50%; transform: translateX(-50%); font-family: 'Caveat',serif; font-size: 54px; width: max-content">Devanture de l'hôtel !</p>
+        <button id="enterHotel">Suivant</button>
     </section>
 
     <section id="porteHotel" style="height: 100%">
         <img src="./public/img/porte_hotel/ouverture2porte.png" alt="">
         <div class="porteGauche"></div>
         <div class="porteDroite"></div>
-        <button id="openHotelDoor" style="position: fixed; bottom: 5%; left: 45%; transform: translateX(-50%)">Open</button>
-        <button id="enterHotelDoor" style="position: fixed; bottom: 5%; left: 55%; transform: translateX(-50%); display: none">Enter</button>
+        <button id="openHotelDoor" style="position: fixed; bottom: 5%; left: 45%; transform: translateX(-50%)">Ouvrir</button>
+        <button id="enterHotelDoor" style="position: fixed; bottom: 5%; left: 55%; transform: translateX(-50%); display: none">Entrer</button>
         <div class="decorReception"></div>
     </section>
 
     <section id="polaRecep1">
         <img src="./public/img/pola_accueil.png" alt="">
-        <button id="nextPolaRecept1">Next</button>
+        <p style="position: fixed; bottom: 13%; color:black; left: 50%; transform: translateX(-50%); font-family: 'Caveat',serif; font-size: 54px; width: max-content">Réception de l'hôtel !</p>
+        <button id="nextPolaRecept1">Suivant</button>
     </section>
 
     <section id="polaRecep2">
         <img src="./public/img/pola_accueil2.png" alt="">
-        <button id="nextPolaRecept2">Next</button>
+        <p style="position: fixed; bottom: 13%; color:black; left: 50%; transform: translateX(-50%); font-family: 'Caveat',serif; font-size: 54px; width: max-content">Réception de l'hôtel !</p>
+        <button id="nextPolaRecept2">Suivant</button>
     </section>
 
     <section id="polaRecep3">
         <img src="./public/img/pola_accueil3.png" alt="">
-        <button id="nextPolaRecept3">Next</button>
+        <p style="position: fixed; bottom: 13%; color:black; left: 50%; transform: translateX(-50%); font-family: 'Caveat',serif; font-size: 54px; width: max-content">Réception de l'hôtel !</p>
+        <button id="nextPolaRecept3">Suivant</button>
     </section>
 
     <section id="sectionAscen" style="height: 100vh; display: none; overflow: hidden">
@@ -144,12 +156,12 @@
         <div class="porteAscDroite" style="z-index: 2;"></div>
         <div class="porteAscGauche" style="z-index: 2;"></div>
         <div id="interieurAsc"></div>
-        <button id="openDoorAsc" style="position: fixed; bottom: 5%; left: 45%; transform: translateX(-50%);">Open</button>
-        <button id="enterDoorAsc" style="position: fixed; bottom: 5%; left: 55%; transform: translateX(-50%);display: none;">Enter</button>
+        <button id="openDoorAsc" style="position: fixed; bottom: 5%; left: 45%; transform: translateX(-50%);">Ouvrir</button>
+        <button id="enterDoorAsc" style="position: fixed; bottom: 5%; left: 55%; transform: translateX(-50%);display: none;">Entrer</button>
         <button id="endDoorAsc" style="position: fixed; bottom: 5%; left: 50%; transform: translateX(-50%);display: none;">Sortir</button>
         <div style="background: #0a0a0a; height: 100%; width: 40px; position: fixed; left: 37%; z-index: 3"></div>
         <div style="background: #0a0a0a; height: 100%; width: 40px; position: fixed; left: 61%; z-index: 3"></div>
-        <p class="scrollPara">Scroll vers le haut pour continuer !</p>
+        <p class="scrollPara" style="font-family: 'Caveat', sans-serif; font-size: 52px; margin-top: 16px">Scroll vers le haut !</p>
 
 
         <div class="etage" style="position: absolute; margin-top: 50vh; display: none; align-items: center; left: 50%; transform: translateX(-50%);font-size: 52px; gap: 66px">
@@ -182,9 +194,19 @@
         </div>
         <div class="lastEtage" style="position: absolute; margin-top: 750vh; display: none; align-items: center; left: 50%; transform: translateX(-50%);font-size: 52px; gap: 66px">
             <div class="line" style="background: white; height: 15px; width: 1420px"></div>
-            <p>-1</p>
+            <p>???</p>
         </div>
     </section>
+
+    <section id="sectionBd" style="display: none; width: 100%; overflow:hidden;">
+        <img src="./public/img/bd/cadre.png" alt="" style="width: 100%; z-index: 3">
+        <img id="photo1BD" src="./public/img/bd/photo1.png" alt="" style="position: absolute; z-index: 2">
+        <img id="photo2BD" src="./public/img/bd/photo2.png" alt="" style="position: absolute; top: 0; right: 0; z-index: 2">
+        <img id="photo3BD" src="./public/img/bd/photo3.png" alt="" style="position: absolute; top: 82%;right: 0; z-index: 2;">
+        <img id="photo4BD" src="./public/img/bd/Spyder.png" alt="" style="position: absolute; top: 133%;right: 0; z-index: 2;">
+        <button id="end">Fin</button>
+    </section>
+
 
 </body>
 </html>

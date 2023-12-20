@@ -31,10 +31,7 @@ btnStart.addEventListener('click', () => {
     volumeParamsMusic(volumeState)
 })
 window.addEventListener('scroll', function(event) {
-    // console.log(scrollY)
-    // console.log(chapiter1.getBoundingClientRect().x, personnage.getBoundingClientRect())
     if (personnage.getBoundingClientRect().x > chapiter1.getBoundingClientRect().x - 100){
-        console.log(scrollY, chapiter1.getBoundingClientRect())
         if (chap1Valid === false){
             window.scrollTo(0, 7600)
         }
@@ -49,7 +46,6 @@ chapiter1.addEventListener("click", function() {
 });
 
 closeInvitation.addEventListener('click', () => {
-    console.log("ok")
     var carre = document.querySelector("#lettreChapitre1");
     carre.style.bottom = "-100%";
 })

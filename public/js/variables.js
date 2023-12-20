@@ -41,4 +41,12 @@ let volumeState = true
 let volumeParam = document.querySelector('#volumeParam')
 let volumeParamOn = document.querySelector('.bxs-volume-full')
 let volumeParamOff = document.querySelector('.bxs-volume-mute')
-
+let sound_door = new Audio('./public/sound/sound_door.mp3')
+let sound_door_close = new Audio('./public/sound/sound_door_close.mp3')
+let sound_door_ASC = new Audio('./public/sound/sound_door01.mp3')
+let sound_door_ding = new Audio('./public/sound/sound_door_ding.mp3')
+let sound_door_panne = new Audio('./public/sound/sound_door_panne_04.mp3')
+let sound_door_boom = new Audio('./public/sound/sound_boom_05.mp3')
+let sectionBd = document.querySelector('#sectionBd')
+let useScrollBottom = true
+let endbtn = document.querySelector('#end')

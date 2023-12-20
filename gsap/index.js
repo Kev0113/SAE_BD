@@ -176,6 +176,37 @@ gsap.fromTo('#hotel',
     }
 )
 
+// document.addEventListener("scroll", () => {
+//     if (sectionBd.style.display !== "none"){
+//         console.log("fnhbvtrhbvhfvtr")
+//         gsap.fromTo('#photo1BD',
+//             {
+//                 left: -847,
+//                 ease: "none",
+//                 scrollTrigger: {
+//                     trigger: document.body,
+//                     start: "top top",
+//                     end: "bottom bottom",
+//                     scrub: 0.5,
+//                     markers: false
+//                 }
+//             },
+//             {
+//                 left: 0,
+//                 ease: "none",
+//                 scrollTrigger: {
+//                     trigger: document.body,
+//                     start: "top top",
+//                     end: "bottom bottom",
+//                     scrub: 0.5,
+//                     markers: false
+//                 }
+//             },
+//         )
+//     }
+// })
+
+
 //EFFET P
 document.addEventListener("mousemove", (e) => {
     const { clientX, clientY } = e;
